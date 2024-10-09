@@ -28,7 +28,15 @@ h6 {
 a {
   text-decoration: none;
 }
-
+img {
+  display: block;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /*header*/
 
 .header {
@@ -98,7 +106,7 @@ a {
 
 .order {
   background-color: #2e2f42;
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .order-title {
@@ -110,12 +118,14 @@ a {
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding-top: 188px;
+
   margin-bottom: 48px;
 }
 .order-button {
   border-radius: 4px;
-  width: 169px;
+  border: none;
+  cursor: pointer;
+  min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -148,17 +158,16 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.about {
+  padding: 120px 0;
+}
 .about-list {
   list-style-type: none;
   display: flex;
   gap: 24px;
-  padding: 120px 0;
 }
-.container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.about-item {
+  flex-basis: calc((100% - 3 * 24px));
 }
 .about-name {
   margin-bottom: 8px;
@@ -193,23 +202,22 @@ a {
 }
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-title {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
 }
 .team-card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 .team-name {
@@ -219,27 +227,26 @@ a {
 
 .portfolio {
   background-color: #ffffff;
+  padding: 120px 0;
 }
 .portfolio-title {
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
   align-items: center;
+  row-gap: 48px;
   gap: 24px;
   flex-wrap: wrap;
-  padding-bottom: 120px;
 }
 .portfolio-item {
   max-width: 360px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
   max-height: 420px;
 }
 .portfolio-card-content {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
   max-height: 120px;
 }
 .portfolio-name {
@@ -247,12 +254,14 @@ a {
 }
 .footer {
   background-color: #2e2f42;
-}
-.footer-content {
   padding: 100px 0;
 }
 .footer-logo-design {
   color: #f4f4fd;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   max-width: 264px;
@@ -260,5 +269,4 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
 }
