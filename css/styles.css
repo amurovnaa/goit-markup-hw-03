@@ -3,9 +3,37 @@ body {
   background-color: #ffffff;
   color: #434455;
 }
-.nav-list,
-li {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  background: #fff;
+}
+.header-flex {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -20,7 +48,19 @@ li {
 .logo-design {
   color: #2e2f42;
 }
-
+.nav {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 76px;
+}
+.nav-list,
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .nav-links {
   font-weight: 500;
   font-size: 16px;
@@ -35,16 +75,14 @@ li {
 }
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
-.contacts-list {
-  list-style-type: none;
-}
+
 .contacts-links {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  text-decoration: none;
 }
 .contacts-links:hover,
 .contacts-links:focus {
@@ -75,11 +113,26 @@ li {
   background-color: #404bbf;
   cursor: pointer;
 }
-.about-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .about-list {
   list-style-type: none;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .about-name,
 .team-name,
