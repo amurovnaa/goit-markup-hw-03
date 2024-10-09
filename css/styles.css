@@ -3,6 +3,9 @@ body {
   background-color: #ffffff;
   color: #434455;
 }
+
+/*reset*/
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +28,8 @@ h6 {
 a {
   text-decoration: none;
 }
+
+/*header*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -88,18 +93,30 @@ a {
 .contacts-links:focus {
   color: #404bbf;
 }
+
+/*order-section*/
+
 .order {
   background-color: #2e2f42;
+  padding-bottom: 188px;
 }
+
 .order-title {
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  padding-top: 188px;
+  margin-bottom: 48px;
 }
 .order-button {
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -107,12 +124,18 @@ a {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
 }
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
   cursor: pointer;
 }
+
+/*about-section*/
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -127,6 +150,9 @@ a {
 }
 .about-list {
   list-style-type: none;
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
 }
 .container {
   max-width: 1158px;
@@ -134,6 +160,10 @@ a {
   padding-right: 15px;
   margin: 0 auto;
 }
+.about-name {
+  margin-bottom: 8px;
+}
+
 .about-name,
 .team-name,
 .portfolio-name {
