@@ -62,10 +62,10 @@ img {
 .nav {
   display: flex;
   align-items: center;
+  padding: 24px 0;
 }
 .logo {
   margin-right: 76px;
-  padding: 24px 0;
 }
 
 .nav-list,
@@ -73,7 +73,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 .nav-links {
   font-weight: 500;
