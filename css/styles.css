@@ -62,7 +62,6 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 .logo {
   padding: 24px 0;
@@ -265,6 +264,7 @@ img {
   color: #f4f4fd;
 }
 .footer-logo {
+  padding: 0;
   display: inline-block;
   margin-bottom: 16px;
 }
